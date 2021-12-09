@@ -1,0 +1,38 @@
+<!--BUILDING MY FIRST REACT APP-->
+<!--OUTPUTTING MY NAME ON THE WEBPAGE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        #container {
+            padding: 50px;
+            background-color: #EEE;
+        }
+        #container h1 {
+            font-size: 144px;
+            font-family: sans-serif;
+            color:#0080A8;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/babel">
+    var destination=document.querySelector("#container");
+//ReactDOM takes in 2 arguments, 1 is JSX and 2nd is the element we want to print our content to
+        ReactDOM.render(
+            <h1>Rishab Kashyap!</h1>,
+            //document.body
+            destination
+        );
+    </script>
+</body>
+</html>
